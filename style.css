@@ -1,0 +1,134 @@
+body {
+    background-color: #f4f8f4;
+    animation: fadeInBody 0.8s ease-in;
+}
+
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.card {
+    border-radius: 12px;
+    animation: slideUp 0.7s ease forwards;
+    opacity: 0;
+}
+
+/* Delay animation for each card */
+.card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.section-title {
+    font-weight: 600;
+    color: #2d6a4f;
+}
+
+/* Input focus animation */
+.form-control:focus,
+.form-select:focus {
+    border-color: #2d6a4f;
+    box-shadow: 0 0 0 0.15rem rgba(45, 106, 79, 0.25);
+    transition: all 0.3s ease;
+}
+
+/* Button animation */
+.btn-calc {
+    background-color: #2d6a4f;
+    color: #fff;
+    font-size: 18px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-calc:hover {
+    background-color: #1b4332;
+    color: wheat;
+    transform: scale(1.05);
+}
+
+.btn-calc:active {
+    transform: scale(0.98);
+}
+
+.text-center button {
+    margin: 10px;
+}
+
+.history {
+    margin-top: 40px;
+}
+
+.tbl {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+.message-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.message {
+    padding: 10px 20px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    display: none;
+}
+
+.error {
+    background-color: #e74c3c;
+    border-left: 6px solid #c0392b;
+}
+
+.success {
+    background-color: #2ecc71;
+    border-left: 6px solid #27ae60;
+}
+
+.info {
+    background-color: #3498db;
+    border-left: 6px solid #2980b9;
+}
