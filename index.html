@@ -10,11 +10,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="container my-4">
+    <div class="container my-4" id="mainOfAll">
         <h2 class="text-center mb-4 text-success">🌾 Crop Cost Calculator</h2>
 
         <div class="card mb-3">
@@ -43,6 +49,7 @@
         <div class="text-center">
             <button class="btn btn-calc px-5 py-2" onclick="addExpense()">Add Expense</button>
             <button class="btn btn-calc px-5 py-2" onclick="addIncome()">Add Income</button>
+            <button class="btn btn-calc px-5 py-2" onclick="toConfirm()">Clear All</button>
         </div>
 
         <h4 class="history">History :</h4>
@@ -80,8 +87,6 @@
 
 
     <script src="index.js"></script>
-    <!-- <script src="index2.js"></script> -->
 </body>
-
 
 </html>

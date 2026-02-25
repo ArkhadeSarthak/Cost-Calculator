@@ -113,7 +113,6 @@ console.log(allIncome);
 
 document.getElementById("revenue").innerHTML += allIncome;
 
-
 document.getElementById("netIncome").innerHTML += allIncome - allCost;
 
 
