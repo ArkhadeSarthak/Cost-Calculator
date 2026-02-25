@@ -113,4 +113,22 @@ console.log(allIncome);
 
 document.getElementById("revenue").innerHTML += allIncome;
 
+
 document.getElementById("netIncome").innerHTML += allIncome - allCost;
+
+
+function toConfirm() {
+    document.getElementById("confirmDiv").style.display = "block";
+    document.getElementById("mainOfAll").style.filter = "blur(15px)"
+}
+
+function confirmYes() {
+    localStorage.removeItem("income");
+    localStorage.removeItem("expenses");
+    window.location.reload();
+}
+
+function confirmNo() {
+    document.getElementById("confirmDiv").style.display = "none";
+    document.getElementById("mainOfAll").style.filter = "blur(0px)"
+}
