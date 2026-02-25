@@ -70,9 +70,18 @@
         <div class="message info" id="info">Info: Your session will expire in 10 minutes.</div>
     </div>
 
+    <div id="confirmDiv" class="confirm-overlay">
+        <div class="confirm-box">
+            <p>Are you sure you want to reset?</p>
+            <button onclick="confirmYes()" id="confirmYes">Yes</button>
+            <button onclick="confirmNo()" id="confirmNo">No</button>
+        </div>
+    </div>
+
 
     <script src="index.js"></script>
     <!-- <script src="index2.js"></script> -->
 </body>
+
 
 </html>
